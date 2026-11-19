@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de José Guilherme Behrmann — estudante de Engenharia de Software, desenvolvedor em formação.">
+    <meta name="theme-color" content="#0b0f19">
+    <title>José Guilherme Behrmann | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Efeitos globais -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Cabeçalho -->
+    <header id="header">
+        <a href="#hero" class="logo"><i class="fa-solid fa-terminal"></i> <span>JG</span>.dev</a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#academico">Acadêmico</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato" class="nav-cta">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-container-flex">
+            <div class="hero-profile-img reveal" data-tilt="8">
+                <div class="avatar-ring"></div>
+                <img src="./img/perfil.jpg" alt="Foto de José Guilherme Behrmann">
+                <span class="status-pill"><i></i> Disponível para estágio</span>
+            </div>
+            <div class="hero-content reveal">
+                <p class="hero-kicker">&gt; hello, world<span class="blink">_</span></p>
+                <h1>Olá, sou o <span class="highlight glitch" data-text="José Guilherme">José Guilherme</span></h1>
+                <p class="typed-line">Eu sou <span id="typed"></span><span class="cursor">|</span></p>
+                <p class="hero-sub">Baiano, 26 anos · Estudante de Engenharia de Software no UDF · Desenvolvedor em formação</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn magnetic"><i class="fa-solid fa-code"></i> Ver projetos</a>
+                    <a href="#contato" class="btn btn-ghost magnetic"><i class="fa-solid fa-paper-plane"></i> Fale comigo</a>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- Faixa de tecnologias -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Python</span><span>Java</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>Git</span><span>VS Code</span><span>Bubble.io</span><span>Vercel</span><span>Engenharia de Prompt</span>
+            <span>Python</span><span>Java</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>Git</span><span>VS Code</span><span>Bubble.io</span><span>Vercel</span><span>Engenharia de Prompt</span>
+        </div>
+    </div>
+
+    <main class="dashboard-container">
+
+        <!-- Sobre -->
+        <section id="sobre" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-user-gear"></i> Visão Geral &amp; Origem</h2>
+            <div class="about-grid">
+                <div class="card-glass tilt reveal" data-tilt="4">
+                    <p>Sou baiano de Ilhéus — terra do escritor Jorge Amado —, recém-chegado a Brasília, filho de professores e neto de produtores rurais. Aos 26 anos, sigo na minha segunda graduação: após cursar até o 9º semestre de Odontologia, decidi migrar para a minha verdadeira paixão de infância: a tecnologia.</p>
+                    <p>Cresci na época do celular "tijolo", do computador de disquete, do MSN, do Orkut, do Polystation e do surgimento do PlayStation 1. Sempre fui hiperconectado. Meu primeiro contato com um computador veio por influência do meu pai, que foi secretário de esporte. Por falar em esporte, pratiquei de tudo um pouco, com forte afinidade por futebol e canoagem.</p>
+                    <p>E claro: carrego com orgulho o sotaque baiano, o amor pelas raízes, pela dança e pela boa e velha pinga. Tenho experiência prática na indústria de hardware (montagem e manutenção de computadores, celulares e urnas eletrônicas) e hoje aplico essa bagagem e resiliência na Engenharia de Software.</p>
+                </div>
+                <div class="about-side">
+                    <div class="card-glass tilt reveal" data-tilt="6">
+                        <span class="metric-title">Origem</span>
+                        <p class="side-big"><i class="fa-solid fa-location-dot"></i> Ilhéus, BA</p>
+                        <span class="metric-desc">Hoje em Brasília, DF</span>
+                    </div>
+                    <div class="card-glass tilt reveal" data-tilt="6">
+                        <span class="metric-title">Formação anterior</span>
+                        <p class="side-big"><i class="fa-solid fa-tooth"></i> Odontologia</p>
+                        <span class="metric-desc">Até o 9º semestre</span>
+                    </div>
+                    <div class="card-glass tilt reveal" data-tilt="6">
+                        <span class="metric-title">Fora do código</span>
+                        <p class="side-big"><i class="fa-solid fa-futbol"></i> Futebol &amp; canoagem</p>
+                        <span class="metric-desc">Dança, raízes e sotaque baiano</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acadêmico -->
+        <section id="academico" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-graduation-cap"></i> Trajetória Acadêmica (UDF)</h2>
+            <p class="section-sub reveal">Engenharia de Software · curso de 4 anos (8 semestres). Acompanhamento do progresso curricular.</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card tilt reveal" data-tilt="8">
+                    <span class="metric-title">Duração total</span>
+                    <span class="metric-value"><span class="count" data-to="4">0</span> <small>anos</small></span>
+                    <span class="metric-desc">Engenharia de Software</span>
+                </div>
+                <div class="metric-card tilt reveal" data-tilt="8">
+                    <span class="metric-title">Etapas</span>
+                    <span class="metric-value"><span class="count" data-to="8">0</span> <small>semestres</small></span>
+                    <span class="metric-desc">Estrutura curricular</span>
+                </div>
+                <div class="metric-card highlight-card tilt reveal" data-tilt="8">
+                    <span class="metric-title">1º Semestre</span>
+                    <span class="metric-value status-ok"><span class="count" data-to="100">0</span>%</span>
+                    <span class="metric-desc">Concluído (aprovado)</span>
+                </div>
+                <div class="metric-card highlight-card tilt reveal" data-tilt="8">
+                    <span class="metric-title">2º Semestre</span>
+                    <span class="metric-value status-run">Ativo</span>
+                    <span class="metric-desc">Em andamento</span>
+                </div>
+            </div>
+
+            <div class="card-glass reveal" style="margin-top: 1.5rem;">
+                <div class="progress-head">
+                    <span><i class="fa-solid fa-chart-line"></i> Progresso da graduação — 1 de 8 semestres concluído, 2º em andamento</span>
+                    <span class="progress-num"><span class="count" data-to="12.5" data-decimals="1">0</span>% concluído</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill done" data-width="12.5"></div>
+                    <div class="progress-bar-fill running" data-width="12.5" data-offset="12.5"></div>
+                </div>
+                <div class="progress-legend"><span><i class="dot ok"></i> Concluído</span><span><i class="dot run"></i> Em andamento</span></div>
+            </div>
+
+            <div class="semesters-row">
+                <div class="card-glass tilt reveal" data-tilt="4">
+                    <h3><i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Semestre 1 (Concluído)</h3>
+                    <ul class="sub-list">
+                        <li>Prototipagem de Sistemas Computacionais <span class="tag-status ok">Aprovado</span></li>
+                        <li>Programação de Computadores <span class="tag-status ok">Aprovado</span></li>
+                        <li>Engenharia de Prompt e Aplicações em IA <span class="tag-status ok">Aprovado</span></li>
+                        <li>Interface e Jornada do Usuário <span class="tag-status ok">Aprovado</span></li>
+                    </ul>
+                </div>
+                <div class="card-glass tilt reveal" data-tilt="4">
+                    <h3><i class="fa-solid fa-spinner fa-spin" style="color:#38bdf8;"></i> Semestre 2 (Cursando)</h3>
+                    <ul class="sub-list">
+                        <li>Algoritmos e Pensamento Computacional <span class="tag-status run">Cursando</span></li>
+                        <li>Desenvolvimento Front-End para Web <span class="tag-status run">Cursando</span></li>
+                        <li>Design Profissional <span class="tag-status run">Cursando</span></li>
+                        <li>Modelagem de Banco de Dados <span class="tag-status run">Cursando</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experiencia" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-briefcase"></i> Histórico Profissional</h2>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <span class="tl-dot now"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Abril de 2026 – Momento</span>
+                        <h3>Repositor FLV</h3>
+                        <p class="company">Oba Hortifruti (Águas Claras, DF)</p>
+                        <p class="desc">Atendimento ao cliente, produção e logística de matéria-prima no setor de frutas, legumes e verduras.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Novembro de 2024 – Fevereiro de 2026</span>
+                        <h3>Assistente de Operações</h3>
+                        <p class="company">Zinho Lava Jato / Dourados Car</p>
+                        <p class="desc">Logística operacional e controle no transporte de veículos (1 ano e 4 meses).</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Junho de 2024 – Novembro de 2024</span>
+                        <h3>Vendedor</h3>
+                        <p class="company">Mateus Iphone073</p>
+                        <p class="desc">Comercialização de aparelhos eletrônicos e periféricos (6 meses).</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Junho de 2023 – Outubro de 2023</span>
+                        <h3>Auxiliar de Produção</h3>
+                        <p class="company">Positivo Tecnologia (Ilhéus, BA)</p>
+                        <p class="desc">Montagem e manuseio de eletrônicos e hardware (5 meses).</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Outubro de 2021 – Julho de 2022</span>
+                        <h3>Bartender</h3>
+                        <p class="company">Convez (Ilhéus, BA)</p>
+                        <p class="desc">Responsável por servir bebidas e atender aos pedidos dos clientes em bares (10 meses).</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Abril de 2019 – Dezembro de 2021</span>
+                        <h3>Serviços Gerais</h3>
+                        <p class="company">Clube Sizínio (Ilhéus, BA)</p>
+                        <p class="desc">Zelar pela guarda, conservação, manutenção, higiene e limpeza dos equipamentos e materiais.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="tl-dot"></span>
+                    <div class="card-glass tilt" data-tilt="3">
+                        <span class="badge-time">Dezembro de 2020 – Junho de 2021</span>
+                        <h3>Recepcionista</h3>
+                        <p class="company">Infotec Brasil</p>
+                        <p class="desc">Recepção e prospecção de clientes (7 meses).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-server"></i> Repositório de Projetos</h2>
+            <div class="projects-dash-grid">
+                <article class="card-glass project-card tilt reveal" data-tilt="8">
+                    <i class="fa-solid fa-heart-pulse project-icon"></i>
+                    <h3>HealthSchedule</h3>
+                    <p>Aplicativo web No-Code (Bubble.io) de bares em Brasília, focado em geolocalização e estilos musicais.</p>
+                    <div class="tags-container"><span class="tag">No-Code</span><span class="tag">Bubble.io</span></div>
+                </article>
+                <article class="card-glass project-card tilt reveal" data-tilt="8">
+                    <i class="fa-solid fa-anchor project-icon"></i>
+                    <h3>Nautilus Studio</h3>
+                    <p>Desenvolvimento e estruturação de site web para estúdio, aplicando práticas modernas de front-end.</p>
+                    <div class="tags-container"><span class="tag">Web</span><span class="tag">Vercel</span></div>
+                </article>
+                <article class="card-glass project-card tilt reveal" data-tilt="8">
+                    <i class="fa-solid fa-notes-medical project-icon"></i>
+                    <h3>SaúdePro</h3>
+                    <p>Protótipo web de agendamento de consultas médicas desenvolvido com Google AI Studio.</p>
+                    <div class="tags-container"><span class="tag">Web</span><span class="tag">UI/UX</span></div>
+                </article>
+                <article class="card-glass project-card tilt reveal" data-tilt="8">
+                    <i class="fa-solid fa-scale-balanced project-icon"></i>
+                    <h3>GuiaLegal TEA</h3>
+                    <p>Aplicação voltada à autodefesa, gestão de direitos e orientação jurídica para pessoas atípicas.</p>
+                    <div class="tags-container"><span class="tag">Software Social</span><span class="tag">Python</span></div>
+                </article>
+                <article class="card-glass project-card tilt reveal" data-tilt="8">
+                    <i class="fa-solid fa-database project-icon"></i>
+                    <h3>Sistemas de Banco de Dados</h3>
+                    <p>Modelagem e estruturação de esquemas relacionais em MySQL para a Fórmula 1 e reservas.</p>
+                    <div class="tags-container"><span class="tag">MySQL</span><span class="tag">Modelagem</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-images"></i> Galeria de Projetos &amp; Bastidores</h2>
+            <p class="section-sub reveal">Registros visuais das interfaces desenvolvidas e atividades de campo. Clique para ampliar.</p>
+
+            <div class="gallery-grid">
+                <button class="card-glass gallery-item reveal" data-caption="Entrevista Guiada — Requisitos de Saúde">
+                    <img src="./img/entrevista guiada.jpg" alt="Entrevista Guiada" loading="lazy">
+                    <div class="gallery-overlay"><span>Entrevista Guiada — Requisitos de Saúde</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="GuiaLegal TEA — Tela Inicial">
+                    <img src="./img/guia legalinicio.png" alt="GuiaLegal Início" loading="lazy">
+                    <div class="gallery-overlay"><span>GuiaLegal TEA — Tela Inicial</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="GuiaLegal TEA — Painel Principal">
+                    <img src="./img/guialegahome.png" alt="GuiaLegal Home" loading="lazy">
+                    <div class="gallery-overlay"><span>GuiaLegal TEA — Painel Principal</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="Nautilus Studio — Home Page">
+                    <img src="./img/nautilus home.png" alt="Nautilus Home" loading="lazy">
+                    <div class="gallery-overlay"><span>Nautilus Studio — Home Page</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="Nautilus Studio — Seção de Perfis">
+                    <img src="./img/nautilusperfis.png" alt="Nautilus Perfis" loading="lazy">
+                    <div class="gallery-overlay"><span>Nautilus Studio — Seção de Perfis</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="SaúdePro — Sistema de Saúde">
+                    <img src="./img/saudepro.jpg" alt="SaúdePro" loading="lazy">
+                    <div class="gallery-overlay"><span>SaúdePro — Sistema de Saúde</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="HealthSchedule — Seleção de Bares">
+                    <img src="./img/teladeopçaodebaresHealthSchedule.png" alt="HealthSchedule Opções" loading="lazy">
+                    <div class="gallery-overlay"><span>HealthSchedule — Seleção de Bares</span></div>
+                </button>
+                <button class="card-glass gallery-item reveal" data-caption="HealthSchedule — Tela Inicial">
+                    <img src="./img/telahomeHealthSchedule.png" alt="HealthSchedule Home" loading="lazy">
+                    <div class="gallery-overlay"><span>HealthSchedule — Tela Inicial</span></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-microchip"></i> Stack Tecnológica</h2>
+            <div class="skills-dash-grid">
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-brands fa-java"></i> Java</div>
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-solid fa-database"></i> Modelagem de Dados</div>
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-solid fa-file-excel"></i> Pacote Office Avançado</div>
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-solid fa-microchip"></i> Hardware &amp; Manutenção</div>
+                <div class="card-glass skill-item tilt reveal" data-tilt="12"><i class="fa-solid fa-laptop-code"></i> VS Code &amp; Git</div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="dash-section">
+            <h2 class="reveal"><i class="fa-solid fa-paper-plane"></i> Central de Contato</h2>
+            <div class="card-glass full-width text-center contact-card reveal">
+                <p>Buscando oportunidades de estágio ou posições juniores para aplicar minha lógica de programação, habilidades técnicas e visão de resolução de problemas em projetos reais de software.</p>
+                <div class="social-links-dash">
+                    <a href="https://wa.me/5573981175062?text=Ol%C3%A1%20Jos%C3%A9%2C%20vi%20seu%20portf%C3%B3lio!" target="_blank" rel="noopener" class="btn-dash btn-whats magnetic"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/guibehrmann" target="_blank" rel="noopener" class="btn-dash magnetic"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Guibarros777" target="_blank" rel="noopener" class="btn-dash magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.instagram.com/_zebarross/" target="_blank" rel="noopener" class="btn-dash magnetic"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Guilherme Behrmann Barros — Todos os direitos reservados.</p>
+    </footer>
+
+    <button class="to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lb-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lb-nav lb-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button class="lb-nav lb-next" aria-label="Próxima"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
